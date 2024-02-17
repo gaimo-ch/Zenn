@@ -1,0 +1,26 @@
+{
+  "title": "📝 Proxmox VE",
+  "closed": false,
+  "archived": false,
+  "created_at": "2023-09-17",
+  "comments": [
+    {
+      "author": "gaimo_ch",
+      "created_at": "2023-09-17",
+      "body_markdown": "# ホストマシンの設定\n### コンソールを縦にしたい時\n```:/etc/default/grub\nGRUB_CMDLINE_LINUX_DEFAULT=\"quiet splash video=efifb fbcon=rotate:1\"\n```\n```sh\nsudo update-grub\n```",
+      "body_updated_at": "2024-01-18"
+    },
+    {
+      "author": "gaimo_ch",
+      "created_at": "2023-09-29",
+      "body_markdown": "# CT, VMの制御\n### タイムアウトでVMをシャットダウンできない場合\n```sh\nps aux | grep \"/usr/bin/kvm -id VMID\"\nkill -9 PID\n```",
+      "body_updated_at": "2024-01-18"
+    },
+    {
+      "author": "gaimo_ch",
+      "created_at": "2024-01-18",
+      "body_markdown": "# CT, VMの初期設定\n### シェル上でカレントディレクトリが表示されない場合\n```:~/.zshrcなど...\nPS1=\"%n@%m:%~%# \"\n```\n### 新規ユーザー追加及びシェルの指定、パスワード設定\n```sh\nsudo useradd -m -G sudo -s /bin/zsh {user name} && sudo passwd {user name}\n```",
+      "body_updated_at": "2024-01-28"
+    }
+  ]
+}

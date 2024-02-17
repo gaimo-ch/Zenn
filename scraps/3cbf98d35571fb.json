@@ -1,0 +1,18 @@
+{
+  "title": "🍓 Raspberry Pi 4",
+  "closed": false,
+  "archived": false,
+  "created_at": "2023-09-27",
+  "comments": [
+    {
+      "author": "gaimo_ch",
+      "created_at": "2023-09-27",
+      "body_markdown": "# コンソールを縦にしたい時\n```:/boot/config.txt\ndisplay_hdmi_rotate=1 ← 追加\n#dtoverlay=vc4-kms-v3d ← コメントアウト\n```"
+    },
+    {
+      "author": "gaimo_ch",
+      "created_at": "2023-09-27",
+      "body_markdown": "# Raspberry Pi OS Liteを入れた後にapt updateでエラーが出る場合\n```sh\nsudo apt-get update --allow-releaseinfo-change\n```"
+    }
+  ]
+}
